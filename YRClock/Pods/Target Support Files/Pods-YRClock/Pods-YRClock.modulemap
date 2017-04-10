@@ -1,0 +1,6 @@
+framework module Pods_YRClock {
+  umbrella header "Pods-YRClock-umbrella.h"
+
+  export *
+  module * { export * }
+}
