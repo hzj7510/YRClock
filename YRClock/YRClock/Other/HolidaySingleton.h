@@ -11,5 +11,5 @@
 @interface HolidaySingleton : NSObject
 + (instancetype)sharedInstance;
 
-@property(nonatomic,strong)NSArray *dataArray;
+@property(nonatomic, strong)NSArray *dataArray;
 @end

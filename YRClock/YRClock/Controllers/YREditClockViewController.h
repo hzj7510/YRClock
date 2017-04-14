@@ -10,6 +10,6 @@
 #import "YRClockViewModel.h"
 
 @interface YREditClockViewController : UIViewController
--(instancetype)initWithIndex:(NSInteger)clockIndex andViewModel:(YRClockViewModel *)viewModel;
+-(instancetype)initWithIndex:(NSInteger)clockIndex;
 
 @end

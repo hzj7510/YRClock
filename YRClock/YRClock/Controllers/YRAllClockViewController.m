@@ -84,7 +84,7 @@ UITableViewDataSource
                         [self.allClockTableView reloadData];
                     });
                 }
-                NSLog(@"wenwenwen");
+                NSLog(@"wengwengweng");
             }
         }
     }];
@@ -227,7 +227,7 @@ UITableViewDataSource
  *  @param index 这里用index来标记是否为新建,如果是新建闹钟index为-1
  */
 -(void)presentToEditViewControllerWithIndex:(NSInteger)index{
-    YREditClockViewController *editClockViewController = [[YREditClockViewController alloc]initWithIndex:index andViewModel:self.viewModel];
+    YREditClockViewController *editClockViewController = [[YREditClockViewController alloc]initWithIndex:index];
     
     UINavigationController *naviController = [[UINavigationController alloc]initWithRootViewController:editClockViewController];
     [self presentViewController:naviController animated:YES completion:nil];

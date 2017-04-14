@@ -31,15 +31,16 @@
     if (self) {
         self.plistPath = [self getFilePath];
         self.dataArray = [self getClockListData];
+        [self updateClockDataArray];
     }
     return self;
 }
 
 //添加数据
 -(void)insertClockListData:(YRClockModel *)clockModel{
-    NSDictionary *plistDic = nil;
+    NSDictionary *plistDic = [[NSDictionary alloc] initWithContentsOfFile:self.plistPath];
     //如果为空说明没有plist文件，这里要先创建文件
-    if (![[NSFileManager defaultManager] fileExistsAtPath:self.plistPath]){
+    if (plistDic == nil){
         plistDic = [[NSDictionary alloc] initWithObjects:@[[NSMutableArray array]] forKeys:@[@"data"]];
     }
     
@@ -178,7 +179,7 @@
                 }
                     break;
                 case CLOCKTYPEWORKDAYS:{
-                    if (comps.weekday < 6 && comps.weekday > 1) {
+                    if (comps.weekday < 7 && comps.weekday > 1) {
                         time = model.clockTime;
                     }
                 }

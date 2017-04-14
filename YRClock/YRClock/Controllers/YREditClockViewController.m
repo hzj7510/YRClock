@@ -43,10 +43,11 @@ UITableViewDataSource
 
 @implementation YREditClockViewController
 
--(instancetype)initWithIndex:(NSInteger)clockIndex andViewModel:(YRClockViewModel *)viewModel{
+-(instancetype)initWithIndex:(NSInteger)clockIndex{
     self = [super init];
     if (self) {
-        self.viewModel = viewModel;
+        self.viewModel = [[YRClockViewModel alloc]init];
+        [self.viewModel getClockDataWithIndex:clockIndex];
         self.clockIndex = clockIndex;
     }
     return self;

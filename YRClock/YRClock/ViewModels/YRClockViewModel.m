@@ -15,6 +15,8 @@
     
     if (index != -1) {
         self.clockRing = self.model.clockRing;
+        self.clockModelType = self.model.clockType;
+        self.clockModelRemindType = self.model.clockRemindType;
         switch (self.model.clockRemindType) {
             case CLOCKREMINDTYPENONE:
                 self.clockRemindType = @"关闭";
@@ -101,6 +103,8 @@
 
 -(void)getClockSimpleDataWithIndex:(NSInteger)index{
     [super getClockDataWithIndex:index];
+    
+    self.clockModelType = self.model.clockType;
     
     self.isOpen = self.model.isOpen;
     
