@@ -18,13 +18,13 @@ typedef enum : NSUInteger {
      */
     CLOCKTYPEJUSTONETIME,
     /**
-     *  每天
-     */
-    CLOCKTYPEEVERYDAYS,
-    /**
      *  工作日(周一到周五)
      */
     CLOCKTYPEWORKDAYS,
+    /**
+     *  每天
+     */
+    CLOCKTYPEEVERYDAYS,
     /**
      *  法定节假日
      */

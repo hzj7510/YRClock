@@ -19,10 +19,12 @@
 		043FFA6F1E9605F70013EE79 /* YRAllClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FFA6E1E9605F70013EE79 /* YRAllClockViewController.m */; };
 		043FFA721E96140B0013EE79 /* YREditClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FFA711E96140B0013EE79 /* YREditClockViewController.m */; };
 		043FFA751E96189A0013EE79 /* YRCalendarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 043FFA741E96189A0013EE79 /* YRCalendarModel.m */; };
+		048085581E9F187300937CD3 /* HolidaySingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 048085571E9F187300937CD3 /* HolidaySingleton.m */; };
 		0484B5601E9926AE00BB77B5 /* YRBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484B55F1E9926AE00BB77B5 /* YRBaseModel.m */; };
 		0484B5631E99270D00BB77B5 /* YRClockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484B5621E99270D00BB77B5 /* YRClockModel.m */; };
 		0484B5691E99279B00BB77B5 /* YRBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484B5681E99279B00BB77B5 /* YRBaseViewModel.m */; };
 		0484B56F1E99296300BB77B5 /* YRClockViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484B56E1E99296300BB77B5 /* YRClockViewModel.m */; };
+		04A40FDD1E9B8F4300FA5876 /* ClockSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A40FDC1E9B8F4300FA5876 /* ClockSingleton.m */; };
 		4BB620BCC1F4CB7624885F35 /* Pods_YRClock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC4B6FFF22A4CCEA8C07BA8 /* Pods_YRClock.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,8 @@
 		043FFA711E96140B0013EE79 /* YREditClockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YREditClockViewController.m; sourceTree = "<group>"; };
 		043FFA731E96189A0013EE79 /* YRCalendarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRCalendarModel.h; sourceTree = "<group>"; };
 		043FFA741E96189A0013EE79 /* YRCalendarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRCalendarModel.m; sourceTree = "<group>"; };
+		048085561E9F187300937CD3 /* HolidaySingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HolidaySingleton.h; sourceTree = "<group>"; };
+		048085571E9F187300937CD3 /* HolidaySingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HolidaySingleton.m; sourceTree = "<group>"; };
 		0484B55E1E9926AE00BB77B5 /* YRBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRBaseModel.h; sourceTree = "<group>"; };
 		0484B55F1E9926AE00BB77B5 /* YRBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRBaseModel.m; sourceTree = "<group>"; };
 		0484B5611E99270D00BB77B5 /* YRClockModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRClockModel.h; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 		0484B5681E99279B00BB77B5 /* YRBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRBaseViewModel.m; sourceTree = "<group>"; };
 		0484B56D1E99296300BB77B5 /* YRClockViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRClockViewModel.h; sourceTree = "<group>"; };
 		0484B56E1E99296300BB77B5 /* YRClockViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRClockViewModel.m; sourceTree = "<group>"; };
+		04A40FDB1E9B8F4300FA5876 /* ClockSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockSingleton.h; sourceTree = "<group>"; };
+		04A40FDC1E9B8F4300FA5876 /* ClockSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockSingleton.m; sourceTree = "<group>"; };
 		0AC4B6FFF22A4CCEA8C07BA8 /* Pods_YRClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YRClock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB7B006A4A3CDD17A53CF70E /* Pods-YRClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YRClock.release.xcconfig"; path = "Pods/Target Support Files/Pods-YRClock/Pods-YRClock.release.xcconfig"; sourceTree = "<group>"; };
 		B45DC2FC778277C8AE2186FD /* Pods-YRClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YRClock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YRClock/Pods-YRClock.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +88,10 @@
 			children = (
 				040413B21E974568005B372B /* DataSingleton.h */,
 				040413B31E974568005B372B /* DataSingleton.m */,
+				04A40FDB1E9B8F4300FA5876 /* ClockSingleton.h */,
+				04A40FDC1E9B8F4300FA5876 /* ClockSingleton.m */,
+				048085561E9F187300937CD3 /* HolidaySingleton.h */,
+				048085571E9F187300937CD3 /* HolidaySingleton.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -178,10 +188,10 @@
 			children = (
 				0484B55E1E9926AE00BB77B5 /* YRBaseModel.h */,
 				0484B55F1E9926AE00BB77B5 /* YRBaseModel.m */,
-				043FFA731E96189A0013EE79 /* YRCalendarModel.h */,
-				043FFA741E96189A0013EE79 /* YRCalendarModel.m */,
 				0484B5611E99270D00BB77B5 /* YRClockModel.h */,
 				0484B5621E99270D00BB77B5 /* YRClockModel.m */,
+				043FFA731E96189A0013EE79 /* YRCalendarModel.h */,
+				043FFA741E96189A0013EE79 /* YRCalendarModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -257,6 +267,11 @@
 				TargetAttributes = {
 					043FFA481E95DBB00013EE79 = {
 						CreatedOnToolsVersion = 7.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -348,8 +363,10 @@
 				040413BF1E9784A6005B372B /* YRVolumeView.m in Sources */,
 				043FFA6F1E9605F70013EE79 /* YRAllClockViewController.m in Sources */,
 				043FFA511E95DBB00013EE79 /* AppDelegate.m in Sources */,
+				04A40FDD1E9B8F4300FA5876 /* ClockSingleton.m in Sources */,
 				043FFA4E1E95DBB00013EE79 /* main.m in Sources */,
 				0484B5631E99270D00BB77B5 /* YRClockModel.m in Sources */,
+				048085581E9F187300937CD3 /* HolidaySingleton.m in Sources */,
 				043FFA721E96140B0013EE79 /* YREditClockViewController.m in Sources */,
 				0484B5691E99279B00BB77B5 /* YRBaseViewModel.m in Sources */,
 				040413B41E974568005B372B /* DataSingleton.m in Sources */,

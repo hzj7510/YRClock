@@ -16,7 +16,6 @@
  */
 -(void)getClockSimpleDataWithIndex:(NSInteger)index;
 
-
 //闹钟开关状态
 @property(nonatomic,assign)BOOL isOpen;
 //闹钟铃声
@@ -41,4 +40,6 @@
 @property(nonatomic,strong)UIColor *color;
 
 @property(nonatomic,strong)UIColor *timeColor;
+
+@property(nonatomic,strong)RACSignal *update_signal;
 @end

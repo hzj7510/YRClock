@@ -87,9 +87,6 @@ UITableViewDataSource
     RAC(self.remindView.contentLb, text) = RACObserve(self.viewModel, clockRemindType);
     RAC(self.nameView.contentLb, text) = RACObserve(self.viewModel, clockName);
     RAC(self.volumeView.slider, value) = RACObserve(self.viewModel, clockVolume);
-    
-    
-    
 }
 #pragma mark - 视图搭建
 -(void)setupNaviController{
@@ -251,10 +248,29 @@ UITableViewDataSource
             }];
             [view setTitle:@"删除" forState:UIControlStateNormal];
             [view setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-            @weakify(self);
+            
             [[view rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
-                @strongify(self);
-                [self.viewModel.deleteCommand execute:@(self.clockIndex)];
+                
+                @weakify(self);
+                UIAlertAction *actionSure = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+                    @strongify(self);
+                    [self.viewModel.deleteCommand execute:@(self.clockIndex)];
+//                    [self.viewModel.update_signal subscribeNext:^(id x) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [self dismissViewControllerAnimated:YES completion:nil];
+                        });
+//                    }];
+                }];
+                
+                UIAlertAction *actionCancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+                    
+                }];
+                
+                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"确定删除此闹钟嘛？" preferredStyle:UIAlertControllerStyleAlert];
+                [alertController addAction:actionSure];
+                [alertController addAction:actionCancel];
+                [self presentViewController:alertController animated:YES completion:nil];
+                
             }];
             view;
         });
@@ -291,13 +307,6 @@ UITableViewDataSource
 -(void)saveClick:(id)sender{
     [self.viewModel.saveCommand execute:@(self.clockIndex)];
     [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-
--(void)insertDataToPlist{
-    DataSingleton *data = [DataSingleton sharedInstance];
-
-    NSLog(@"%@",data.dataArray);
 }
 
 #pragma mark - animation

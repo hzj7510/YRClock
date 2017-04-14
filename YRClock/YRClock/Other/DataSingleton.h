@@ -32,5 +32,7 @@
  *  @param clockModel 更新的数据
  */
 -(void)updateClockListDataWithRow:(NSInteger)index andModel:(YRClockModel *)clockModel;
+//更新clockData
+-(void)updateClockDataArray;
 
 @end

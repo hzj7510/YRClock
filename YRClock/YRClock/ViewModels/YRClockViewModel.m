@@ -39,7 +39,6 @@
         self.clockVolume = self.model.clockVolume;
         
        
-        
         self.deleteCommand = [[RACCommand alloc]initWithSignalBlock:^RACSignal *(NSNumber *input) {
             @weakify(self);
             return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
@@ -52,6 +51,7 @@
                 }];
             }];
         }];
+        
     }else{
         self.clockRing = @"lalala";
         self.clockRemindType = @"5分钟";
@@ -94,7 +94,6 @@
         YRClockModel *model = self.data.dataArray[index.integerValue];
         model.isOpen = on.boolValue;
         [self.data updateClockListDataWithRow:index.integerValue andModel:model];
-        
     }];
 }
 

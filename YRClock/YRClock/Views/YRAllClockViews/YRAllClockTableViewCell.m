@@ -132,7 +132,6 @@
     }];
 }
 
-
 - (RACSubject *)switchSubject {
     if(_switchSubject == nil) {
         _switchSubject = [[RACSubject alloc] init];
